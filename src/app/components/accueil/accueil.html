@@ -1,0 +1,93 @@
+<div class="home-container">
+    <section class="hero" style="background-image: url('assets/hero.png');">
+        <div class="overlay"></div>
+        <div class="hero-content text-center animate-fade-in">
+            <img src="assets/logo.png" alt="Boutique BMW Tunisie" class="hero-logo mb-4">
+            <h1 class="display-3 fw-bold text-white mb-3">L'excellence bavaroise,<br>au cœur de la Tunisie</h1>
+            <p class="lead text-light mb-5">Découvrez le plaisir de conduire absolu. Voitures neuves, occasions
+                certifiées et innovations électriques.</p>
+            <div class="hero-buttons">
+                <a routerLink="/produits" class="btn btn-primary btn-lg me-3 px-5 rounded-pill" type="button">Nos
+                    Modèles</a>
+                <button (click)="scrollToContact()" class="btn btn-outline-light btn-lg px-5 rounded-pill">Rejoindre
+                    l'univers</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-6">
+                    <div class="feature-card p-4 h-100">
+                        <i class="bi bi-car-front-fill feature-icon mb-3"></i>
+                        <h3 class="mb-3">Voitures Neuves</h3>
+                        <p class="text-secondary">Explorez notre gamme complète de véhicules neufs. Performance, luxe et
+                            technologies de pointe.</p>
+                        <a routerLink="/produits" class="btn btn-link text-primary text-decoration-none"
+                            type="button">Découvrir
+                            produits <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-card p-4 h-100">
+                        <i class="bi bi-patch-check-fill feature-icon mb-3"></i>
+                        <h3 class="mb-3">Occasions Certifiées</h3>
+                        <p class="text-secondary">Des véhicules d'occasion rigoureusement contrôlés pour vous garantir
+                            une sérénité totale.</p>
+                        <a routerLink="/bmw-occasions" class="btn btn-link text-primary text-decoration-none"
+                            type="button">Voir les
+                            offres <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="marketing py-5 bg-black text-white">
+        <div class="container text-center">
+            <h2 class="mb-5 display-5 fw-bold">Le Plaisir de Conduire</h2>
+            <div class="ratio ratio-16x9 marketing-video rounded-3 border border-secondary overflow-hidden">
+                <iframe src="https://www.youtube.com/embed/-8UPg6hyDBg" title="BMW Video" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer py-5 bg-dark text-white border-top border-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h4 class="mb-4 text-uppercase fw-bold text-primary">Boutique BMW Tunisie</h4>
+                    <p class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-primary"></i> Les Berges du Lac 2, Tunis,
+                        1053</p>
+                    <p class="mb-2"><i class="bi bi-telephone-fill me-2 text-primary"></i> +216 71 000 000</p>
+                    <p class="mb-2"><i class="bi bi-envelope-fill me-2 text-primary"></i> contact@example.com (démonstration)</p>
+
+                    <div class="mt-4 rounded overflow-hidden border border-secondary"
+                        style="max-width: 100%; height: 200px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.680077846747!2d10.27892537574744!3d36.84998797223315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd356403666d6f%3A0xc304240722300067!2sLes%20Berges%20du%20Lac%202%2C%20Tunis!5e0!3m2!1sen!2stn!4v1715430000000!5m2!1sen!2stn"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="lead fst-italic">"Le plaisir de conduire commence ici."</p>
+                    <div class="social-icons mt-3">
+                        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col text-center text-secondary small">
+                    &copy; 2026 Boutique BMW Tunisie. Tous droits réservés.
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>

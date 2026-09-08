@@ -1,0 +1,71 @@
+<div class="form-container">
+    <div class="form-card">
+        <h2 class="form-title">Nouvelle Voiture</h2>
+
+        <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+
+            <div class="mb-3">
+                <label for="modele" class="form-label">Modèle</label>
+                <input type="text" id="modele" class="form-control" formControlName="modele" placeholder="BMW Série...">
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-6 mb-3">
+                    <label for="puissance" class="form-label">Puissance</label>
+                    <input type="text" id="puissance" class="form-control" formControlName="puissance"
+                        placeholder="XXX ch">
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="boite" class="form-label">Transmission</label>
+                    <select id="boite" class="form-select" formControlName="boite">
+                        <option value="Automatique">Automatique</option>
+                        <option value="Manuelle">Manuelle</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-6 mb-3">
+                    <label for="gamme" class="form-label">Gamme</label>
+                    <select id="gamme" class="form-select" formControlName="gamme">
+                        <option value="Diesel">Diesel</option>
+                        <option value="Essence">Essence</option>
+                        <option value="Electrique">Électrique</option>
+                        <option value="Hybride">Hybride</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="prix" class="form-label">Prix (DT)</label>
+                    <input type="number" id="prix" class="form-control" formControlName="prix" placeholder="0.00">
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <div class="col-md-6 mb-3">
+                    <label for="etat" class="form-label">État</label>
+                    <select id="etat" class="form-select" formControlName="etat">
+                        <option value="neuve">Neuve</option>
+                        <option value="occasion">Occasion</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="quantite" class="form-label">Stock</label>
+                    <input type="number" id="quantite" class="form-control" formControlName="quantite" min="1">
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="image" class="form-label">Image URL</label>
+                <input type="text" id="image" class="form-control" formControlName="image" placeholder="https://...">
+            </div>
+
+            <button type="submit" class="btn btn-submit" [disabled]="productForm.invalid">
+                <i class="bi bi-plus-lg me-2"></i> Ajouter Produit
+            </button>
+
+        </form>
+    </div>
+</div>

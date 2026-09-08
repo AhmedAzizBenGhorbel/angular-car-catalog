@@ -1,0 +1,10 @@
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link.active {
+    font-weight: bold !important;
+    color: #fff !important;
+}
